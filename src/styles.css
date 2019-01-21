@@ -1,0 +1,15 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.html{
+    height: 100%;
+}
+
+.body{
+    background-color: #fff;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Helvetica', 'sans-serif';
+    font-size: 13px;
+    cursor: default;
+}

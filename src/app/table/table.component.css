@@ -1,0 +1,68 @@
+:host{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    /*width: 100%;*/
+    /*position: relative;*/
+    margin: 15px 12px 12px;
+    border: 1px solid #dfdede;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.header{
+    display: flex;
+    border-bottom: 3px solid #e8e8e8;
+    color: #585858;
+    /*min-height: 34px;*/
+    /*max-height: 34px;*/
+    text-align: center;
+    font-weight: bold;
+    line-height: 34px;
+    font-size: 14px;
+    height: 34px;
+}
+
+.item{
+    border-right: 1px solid #e8e8e8;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: bold;
+    color: #585858;
+}
+
+.id{
+    border-right: 1px solid #e8e8e8;
+    text-align: center;
+    flex: 1 0 150px;
+}
+
+.link{
+    border-right: 1px solid #e8e8e8;
+    text-align: center;
+    flex: 2 0 300px;
+}
+
+.preview{
+    border-right: 1px solid #e8e8e8;
+    text-align: center;
+    flex: 1 0 50px;
+}
+
+.actions{
+    text-align: center;
+    flex: 1 0 100px;
+}
+
+.empty{
+    font-size: 16px;
+    color: #b1b1b1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+
+
+

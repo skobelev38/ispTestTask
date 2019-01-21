@@ -1,0 +1,16 @@
+<div class="header">
+    <div class="id">Имя</div>
+    <div class="link">Ссылка</div>
+    <div class="preview">Превью</div>
+    <div class="actions" [ngStyle]="{'borderRight': 'none'}">Действия</div>
+</div>
+<cdk-virtual-scroll-viewport *ngIf="visibleItems.length > 0 && !loading; else unset" style="display: flex; flex: 1; overflow-x: hidden;" itemSize="38" minBufferPx="1000" maxBufferPx="1000">
+    <ng-container *cdkVirtualFor="let item of visibleItems">
+        <app-item [id]="item.id" [link]="item.link" [favoriteActive]="item.favoriteActive"></app-item>
+    </ng-container>
+</cdk-virtual-scroll-viewport>
+<ng-template #unset>
+    <div *ngIf="!loading" class="empty">Нет данных для отображения</div>
+    <div *ngIf="loading" class="empty">Загрузка...</div>
+</ng-template>
+

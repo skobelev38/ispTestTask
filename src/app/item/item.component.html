@@ -1,0 +1,15 @@
+<div class="id" title={{id}}>{{id}}</div>
+<div class="link" title={{link}}>{{link}}</div>
+<div class="preview">
+    <img class="ico-small" [src]="[link]" (mouseenter)="openPreview($event)" (mouseleave)="closePreview()">
+</div>
+<div class="actions">
+    <div *ngIf="page !== 'deleted'" class="favorite-ico" title="Добавить/убрать из списка любимые" [ngClass]="favoriteActive ? 'favorite-active' : 'favorite-no-active'" (click)="handlerClickFavorite()"></div>
+    <div *ngIf="page !== 'deleted'" class="delete-ico" title="Удалить" (click)="handlerClickDelete()"></div>
+    <div *ngIf="page === 'deleted'" class="restore-ico" title="Восстановить" (click)="handlerClickRestore()"></div>
+</div>
+
+
+<ng-template cdk-portal>
+    <img class="ico-big" [src]="[link]">
+</ng-template>

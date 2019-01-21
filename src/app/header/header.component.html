@@ -1,0 +1,11 @@
+<div class="title">{{title}}</div>
+<div class="search">
+    <div class="search-ico"></div>
+    <input class="input"
+           [title]="'Поиск по названию'"
+           (keyup)="onKey($event)"
+           [placeholder]="'Введите название'"
+           [value]="searchValue"
+    >
+    <div *ngIf="searchValue !== ''" class="count">Найдено: {{count}}</div>
+</div>

@@ -1,0 +1,37 @@
+:host{
+    width: 270px;
+    min-width: 270px;
+    background-color: #1d373f;
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    font-size: 17px;
+    color: #ffffff;
+    cursor: default;
+    text-transform: uppercase;
+    padding: 14px 10px 4px;
+}
+
+.item{
+    height: 33px;
+    background-color: #1D2A30;
+    display: flex;
+    align-items: center;
+    border-radius: 2px;
+    cursor: pointer;
+    color: #fff;
+    padding-left: 10px;
+    margin: 10px 10px 0 10px;
+    outline: none !important;
+    border: none !important;
+}
+
+.item:hover{
+    background-color: #1a4855;
+}
+
+.selected{
+    background-color: #00808f;
+}

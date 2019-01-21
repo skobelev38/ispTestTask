@@ -1,0 +1,4 @@
+<div class="title">Эмоджи</div>
+<div class="item" [ngClass]="{'selected': page === 'all'}" routerLink="/">Все</div>
+<div class="item" [ngClass]="{'selected': page === 'favorites'}" routerLink="/favorites">Любимые</div>
+<div class="item" [ngClass]="{'selected': page === 'deleted'}" routerLink="/deleted">Удаленные</div>
